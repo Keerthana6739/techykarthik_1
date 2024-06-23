@@ -456,6 +456,7 @@ button:focus:not(:focus-visible) {
   margin: auto;
   margin-bottom: 20px;
   transition: filter 0.5s;
+  text-align: center;
 }
 
 .work-thumb:hover .work-text-info {
@@ -795,19 +796,12 @@ button:focus:not(:focus-visible) {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .pricing-name,
-  .pricing-price {
-    margin-bottom: 0;
-  }
 
-  .pricing-price {
-    max-width: 45px;
-    margin-right: auto;
-  }
-}
 
 /*-- about--*/
+.logo{
+  width:40%;
+}
 .about-card{
   background-color: rgb(233, 233, 233);
   border: none;
@@ -847,34 +841,61 @@ button:focus:not(:focus-visible) {
   padding: 15px;
   border-radius: 10px;
   border: 2px solid #d3c017 ;
+  height: 200px;
 }
 .dec {
- list-style: none;
+
  border-left: 2px solid #d3c017;
-}
-.dec1{
-  list-style: none;
 
 }
+.dec li{
+  list-style: none;
+}
+.dec1 li{
+  list-style: none;
+}
+
 .card-dec{
   border: 2px solid #d3c017;
   border-radius: 10px;
 }
 
 /*--Inovations--*/
+.cards-con{
+  
+    background-image: url('../images/back2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+
 .cards{
   padding: 30px;
-  border-radius: 10px;
-  border: 2px solid rgb(91, 209, 224) ;
-  margin-top: 20px;
+ 
+    height: 650px;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(35px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+    padding: 30px 30px 30px 30px;
+    overflow: hidden;
+       margin: 30px;
+       color: white;
+ 
+
 }
+
 .card-sec5{
   margin: 20px;
   border-radius: 20px !important;
   background-color: white;
   border: 1px solid #F2F2F2 !important;
-  box-shadow:  0px 1px 5px 1px  #D9F9F2 !important;
-  height: 530px;
+  box-shadow:  0px 1px 5px 1px  #6e705c !important;
+  height: 550px;
   padding: 20px;
 
 }
@@ -898,4 +919,85 @@ button:focus:not(:focus-visible) {
 }
 .topic{
   padding-left: 450px;
+}
+
+.mission-card{
+  height: 750px;
+  margin-top: 20px;
+  border: 1px solid #F2F2F2 !important;
+  box-shadow:  0px 1px 5px 1px  #6e705c !important;
+}
+.position-card{
+  margin: 30px 20px;
+  padding: 30px;
+  border: 2px solid rgb(91, 209, 224);
+  border-radius: 10px;
+}
+
+.position-col{
+  border-left: 2px solid rgb(91, 209, 224) ;
+}
+.sum-card{
+  padding: 20px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  box-shadow: 5px 5px 10px #e1e1e1;
+  padding: 3em 0;
+  border-bottom-right-radius: 4em;
+  border-top-left-radius: 4em;
+  background: linear-gradient(to left, rgb(182, 235, 235) 50%, #e9addfd2 50%);
+  background-size: 200%;
+  background-position: right;
+  transition: background-position 0.5s ease-out;
+  height: 630px;
+ 
+}
+.sum-card li{
+  list-style: none;
+}
+.sum-cards li{
+  list-style: none;
+}
+.card:hover {
+  background-position: left;
+}
+.card-achieve li{
+ list-style: none;
+}
+
+@media screen and (max-width: 580px) {
+  .cards{
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(91, 209, 224) ;
+    margin-top: 20px;
+   height: 740px;
+  
+  }
+  
+
+  .logo{
+    width:10%;
+  }
+  .position-col{
+    border-left: 0px solid rgb(91, 209, 224) ;
+  }
+ 
+  .topic{
+    padding-left: 20px;
+  }
+  .card2{
+    margin:10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #d3c017;
+    
+  }
+  .dec {
+  
+    border-left: 0px solid #d3c017;
+   }
+  
 }
