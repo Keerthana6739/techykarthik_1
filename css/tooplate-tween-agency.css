@@ -29,7 +29,7 @@ https://www.tooplate.com/view/2128-tween-agency
   --h4-font-size:                 32px;
   --h5-font-size:                 24px;
   --h6-font-size:                 22px;
-  --p-font-size:                  18px;
+  --p-font-size:                  22px;
   --menu-font-size:               18px;
   --copyright-text-font-size:     16px;
   --custom-link-font-size:        14px;
@@ -196,65 +196,11 @@ strong {
   color: var(--white-color);
 }
 
-/*---------------------------------------
-  FAQ ACCORDION               
------------------------------------------*/
-.accordion-item {
-  background-color: transparent;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-}
 
-.accordion-header,
-.accordion-button {
-  color: var(--p-color);
-}
-
-.accordion-button {
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.accordion-button:not(.collapsed) {
-  background: transparent;
-  box-shadow: none;
-}
-
-button:focus:not(:focus-visible) {
-  border-color: transparent;
-  box-shadow: none;
-}
-
-.accordion-item:last-of-type {
-  border-radius: 0;
-}
-
-.accordion-body {
-  border-top: 1px solid rgba(0,0,0,.125);
-}
-
-.accordion-button {
-  font-size: var(--copyright-text-font-size);
-  font-weight: var(--font-weight-normal);
-  padding-top: 1.5rem;
-  padding-right: 0;
-  padding-bottom: 15px;
-  padding-left: 0;
-}
-
-.accordion-body {
-  padding: 2rem 0;
-}
 
 /*---------------------------------------
   HERO              
 -----------------------------------------*/
-.hero {
-  padding-top: 10px;
-  padding-bottom: 60px;
-  position: relative;
-}
 
 .heroText {
   position: relative;
@@ -300,7 +246,7 @@ button:focus:not(:focus-visible) {
   border-bottom: 1px solid transparent;
   color: var(--border-color);
   font-weight: var(--font-weight-bold);
-  margin: auto;
+  
   position: relative;
   top: 1px;
 }
@@ -414,7 +360,7 @@ button:focus:not(:focus-visible) {
   left: 0;
   background: var(--p-color);
   width: 30px;
-  height: 2px;
+  height: 0px;
   content: '';
 }
 
@@ -424,6 +370,21 @@ button:focus:not(:focus-visible) {
 
 .navbar-toggler .navbar-toggler-icon::after {
   top: 8px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.dropdown-menu {
+  width: 648px; /* Adjust width as needed */
+}
+
+/* Optionally increase padding */
+.dropdown-item {
+  padding:0px; /* Adjust padding as needed */
+  background-color: white !important;
 }
 
 /*---------------------------------------
@@ -753,19 +714,22 @@ button:focus:not(:focus-visible) {
 
   .navbar-nav .nav-link {
     color: var(--p-color);
-    padding-top: 5px;
+    padding-top: 15px;
     padding-bottom: 5px;
   }
 
-  .site-footer {
-    padding-top: 70px;
-    padding-bottom: 50px;
-  }
+  
 
   .site-footer-bottom,
   .site-footer .social-icon {
     text-align: center;
   }
+  .hero {
+    padding-top: 100px;
+   
+   
+  }
+  
 }
 
 @media screen and (max-width: 580px) {
@@ -794,13 +758,15 @@ button:focus:not(:focus-visible) {
     margin-right: 0;
     margin-left: 0;
   }
+  
 }
 
 
 
 /*-- about--*/
+
 .logo{
-  width:40%;
+  width:20%;
 }
 .about-card{
   background-color: rgb(233, 233, 233);
@@ -813,7 +779,165 @@ button:focus:not(:focus-visible) {
   padding: 0px 20px;
   border-radius: 12%;
 }
+/*--Key Offerings--*/
 
+
+.card-img-top {
+width:70%;
+padding: 10px;
+margin-left: 80px;
+border-radius: 20px;
+}
+.card-img-top1 {
+  width:70%;
+  padding: 10px;  margin-left: 80px;
+  border-radius: 20px;
+  }
+  
+
+
+.card-key li {
+  list-style: none;
+}
+.card-key{
+  border: 2px solid #3a8fe4;
+  border-radius: 10px;
+  margin-top: 10px;
+
+}
+.sec-1{
+  border-right: 2px solid #3a8fe4;
+  margin: 10px 0px;
+}
+@media screen and (max-width: 580px) {
+  .sec-1{
+    border-right: 0px solid #3a8fe4;
+    margin: 0px 0px;
+  }
+  .card-img-top {
+    width:70%;
+    padding: 10px;
+    margin-left: 50px;
+    border-radius: 20px;
+    }
+    .card-img-top1 {
+      width:70%;
+      padding: 10px;
+        margin-left: 50px;
+      border-radius: 20px;
+      }
+}
+
+/*--industry--*/
+
+.impact-card{
+  margin:20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #07262e;
+  
+}
+.adjust{
+  padding-top: 30px;
+}
+.i-impact{
+  background-color: #f3f3ef;
+}
+.card-flip {
+  border: 2px solid #3a8fe4;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin: 20px;
+  
+}
+
+/*--why choose--*/
+
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.flip-card-back {
+  background-color: #343a40;
+  color: #000;
+  transform: rotateY(180deg);
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.why-card{
+  border-radius: 10px;
+  border:2px solid blue;
+  height: 700px;
+
+}
+.image-why{
+border-radius: 30px;
+padding: 20px;
+margin-top: 40px;
+}
+.card-flip1{
+margin-top: 200px;
+border: 2px solid #3a8fe4;
+border-radius: 10px;
+background-color: #f8f9fa;
+padding: 20px;
+
+}
+
+
+@media screen and (max-width: 580px) {
+  .image-why{
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 20px;
+    width:100%;
+    }
+    .why-card{
+      border-radius: 10px;
+      border:2px solid blue;
+      height: 1000px;
+    
+    }
+    .card-flip {
+      border: 2px solid #3a8fe4;
+      border-radius: 10px;
+      background-color: #f8f9fa;
+      padding: 0px;
+      margin: 0px;
+      
+    }
+}
 
 /*--Achievement--*/
 .center-content {
@@ -951,7 +1075,7 @@ button:focus:not(:focus-visible) {
   background-size: 200%;
   background-position: right;
   transition: background-position 0.5s ease-out;
-  height: 630px;
+  height: 850px;
  
 }
 .sum-card li{
@@ -966,6 +1090,10 @@ button:focus:not(:focus-visible) {
 .card-achieve li{
  list-style: none;
 }
+.image-ino{ 
+  padding:30px 50px 30px 0px ;}
+  .image-ino1{ 
+    padding:30px 30px  ;}
 
 @media screen and (max-width: 580px) {
   .cards{
@@ -976,7 +1104,10 @@ button:focus:not(:focus-visible) {
    height: 740px;
   
   }
-  
+  .image-ino1{ 
+    padding:0px 50px 30px 0px ;}
+    .image-ino{ 
+      padding:0px 50px 30px 0px ;}
 
   .logo{
     width:10%;
@@ -990,7 +1121,7 @@ button:focus:not(:focus-visible) {
   }
   .card2{
     margin:10px;
-    padding: 5px;
+    padding: 20px;
     border-radius: 10px;
     border: 2px solid #d3c017;
     
@@ -999,5 +1130,75 @@ button:focus:not(:focus-visible) {
   
     border-left: 0px solid #d3c017;
    }
+   .cards{
+    padding: 30px;
+   
+      height: 1100px;
+      padding: 2.5rem 2rem;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(35px);
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+      padding: 30px 30px 30px 30px;
+      overflow: hidden;
+         margin: 30px;
+         color: white;
+   
   
+  }
+  .sum-card{
+    padding: 20px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    box-shadow: 5px 5px 10px #e1e1e1;
+    padding: 3em 0;
+    border-bottom-right-radius: 4em;
+    border-top-left-radius: 4em;
+    background: linear-gradient(to left, rgb(182, 235, 235) 50%, #e9addfd2 50%);
+    background-size: 200%;
+    background-position: right;
+    transition: background-position 0.5s ease-out;
+    height: 1200px;
+   
+  }
+  .padding{
+    padding-top: 10px;
+  }
+  .padding1{
+    padding-top: 10px;
+  }
+  .mission-card{
+    height: 780px;
+    margin-top: 20px;
+    border: 1px solid #F2F2F2 !important;
+    box-shadow:  0px 1px 5px 1px  #6e705c !important;
+  }
+  .vision-card{
+    padding: 20px;
+    margin-top:30px ;
+    border-radius: 10px;
+    border:2px solid #d3c017;
+    height: 780px !important;
+   
+  }
+}
+
+.mission-img{
+ padding-left: 70px;
+ width: 80%;
+}
+
+.vision-card{
+  padding: 20px;
+  margin-top:30px ;
+  border-radius: 10px;
+  border:2px solid #d3c017;
+  height: 700px;
+ 
+}
+.vision-card li{
+  list-style: none;
 }
