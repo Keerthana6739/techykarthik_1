@@ -215,7 +215,7 @@
     padding: 15px;
     border-radius: 10px;
     border: 2px solid #d3c017 ;
-    height: 230px !important;
+   
   }
   .dec {
   
@@ -248,7 +248,7 @@
   .cards-i{
     padding: 30px;
    
-      height: 850px !important;
+     
       padding: 2.5rem 2rem;
       border-radius: 20px;
       background: rgba(255, 255, 255, 0.1);
@@ -269,7 +269,7 @@
     background-color: white;
     border: 1px solid #F2F2F2 !important;
     box-shadow:  0px 1px 5px 1px  #6e705c !important;
-    height: 860px !important;
+   
     padding: 20px;
   
   }
@@ -279,7 +279,7 @@
     background-color: white;
     border: 1px solid #F2F2F2 !important;
     box-shadow:  0px 1px 5px 1px  #6e705c !important;
-    height: 730px !important;
+  
     padding: 20px;
   
   }
@@ -306,7 +306,7 @@
   }
   
   .mission-card{
-    height: 750px;
+ 
     margin-top: 20px;
     border: 1px solid #F2F2F2 !important;
     box-shadow:  0px 1px 5px 1px  #6e705c !important;
@@ -335,8 +335,7 @@
     background-size: 200%;
     background-position: right;
     transition: background-position 0.5s ease-out;
-    height: 630px;
-   
+  
   }
   .sum-card li{
     list-style: none;
@@ -357,7 +356,7 @@
       border-radius: 10px;
       border: 2px solid rgb(91, 209, 224) ;
       margin-top: 20px;
-     height: 740px;
+   
     
     }
     .card-sec4{
@@ -366,7 +365,7 @@
       background-color: white;
       border: 1px solid #F2F2F2 !important;
       box-shadow:  0px 1px 5px 1px  #6e705c !important;
-      height: 800px !important;
+     
       padding: 20px;
     
     }
@@ -376,14 +375,14 @@
       background-color: white;
       border: 1px solid #F2F2F2 !important;
       box-shadow:  0px 1px 5px 1px  #6e705c !important;
-      height: 1060px !important;
+    
       padding: 20px;
     
     }
     .cards-i{
       padding: 30px;
      
-        height: 1200px !important;
+    
         padding: 2.5rem 2rem;
         border-radius: 20px;
         background: rgba(255, 255, 255, 0.1);
@@ -403,7 +402,7 @@
       padding: 10px !important;
       border-radius: 10px;
       border: 2px solid #d3c017 ;
-      height: 340px !important;
+    
     }
     .logo{
       width:10%;
