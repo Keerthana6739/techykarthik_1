@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Techy</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="css/tooplate-tween-agency.css" rel="stylesheet">
+    
+    <link href="css/products.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+
+
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img class="logo" src="images/img3.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-lg-5">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="index.html" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <li><a class="dropdown-item nav-link" href="#section_2">Overview</a></li>
+                                        <li><a class="dropdown-item nav-link" href="#section_3">Our Mission & Vision</a></li>
+                                        <li><a class="dropdown-item nav-link" href="#section_4">Key Offerings</a></li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <li><a class="dropdown-item nav-link" href="#section_4">Strategic Partnerships</a></li>
+                                        <li><a class="dropdown-item nav-link" href="#section_5">Industry Impact</a></li>
+                                        <li><a class="dropdown-item nav-link" href="#section_5">Reputation</a></li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <li><a class="dropdown-item nav-link" href="#section_6">Future Directions</a></li>
+                                        <li><a class="dropdown-item nav-link" href="#section_6">Strategic Plan</a></li>
+                                        <li><a class="dropdown-item nav-link" href="#section_7">Why Choose Our Team</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_founder.html">About our Founder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Our Partner's Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Join Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <script>
+        document.getElementById('dropdownMenuButton').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'index.html';
+        });
+        function navigateToSection(event, url) {
+            event.preventDefault();
+            window.location.href = url;
+        }
+    
+        document.querySelectorAll('.dropdown-item').forEach(function(item) {
+            item.addEventListener('click', function(event) {
+                navigateToSection(event, event.target.getAttribute('href'));
+            });
+        });
+    </script>
+
+<section class=" section-padding" >
+    <div class="container">
+        <div class="col-12">
+            <h2 class=" mb-5 text-center mt-5">My Innovations</h2>
+        </div>
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 d-flex">
+                            <div class="card cards-inovation flex-fill">
+                                <h3 class="text-center  mb-5">PayBridgeX</h3>
+                                <h6>Description: </h6> 
+                                <p >A comprehensive payment management and reconciliation solution designed to streamline financial transactions.</p>   
+                                <h6 >Key Features: </h6>   
+                                <p >Automated reconciliation, integration with multiple payment gateways, real-time reporting and analytics, secure encryption.</p>
+                                <h6 >Your Involvement: </h6>
+                                <p >Architectural design ensuring scalability and security, guidance on implementation best practices, and technology stack selection.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="card cards-inovation flex-fill">
+                                <h3 class="text-center  mb-5">Sepia</h3>
+                                <h6 >Description: </h6> 
+                                <p >Transaction Lifecycle Management System (TLMS) optimizing banking operations with robust transaction tracking and management.</p>   
+                                <h6 >Key Features: </h6>   
+                                <p >End-to-end transaction monitoring, risk management tools, real-time data analytics, customizable workflows.</p>
+                                <h6 >Your Involvement: </h6>
+                                <p >End-to-end transaction monitoring, risk management tools, real-time data analytics, customizable workflows.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 d-flex">
+                            <div class="card cards-inovation flex-fill">
+                                <h3 class="text-center  mb-5">Vyas (Versatile Youth Academic System)</h3>
+                                <h6 >Description: </h6> 
+                                <p >School Management System enhancing educational administration with comprehensive student and staff management tools.</p>   
+                                <h6 >Key Features: </h6>   
+                                <p >Student information management, online learning integration, parent communication tools.</p>
+                                <h6 >Your Involvement: </h6>
+                                <p >Architectural planning for scalability and usability, training staff on system implementation, and ensuring alignment with educational sector needs                     </div>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="card cards-inovation flex-fill">
+                                <h3 class="text-center  mb-5">Agas (Automated Guidance and Assistance System)</h3>
+                                <h6 >Description: </h6> 
+                                <p >Hospital Information Management System (HIMS) improving healthcare facility operations with electronic health records and patient management capabilities.</p>   
+                                <h6 >Key Features: </h6>   
+                                <p >Electronic health records (EHR) management, appointment scheduling, billing, and pharmacy management.</p>
+                                <h6 >Your Involvement: </h6>
+                                <p >Architectural guidance for system reliability and data security, technology stack training, and ensuring compliance with healthcare standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+       <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3 d-flex">
+                        <div class="card card-sec5 flex-fill">
+                            
+                            <h6>COMNILE</h6>
+                            <p>Cutting-edge integration platform for organizational processes, including service orchestration, transaction monitoring, and machine learning capabilities.</p>
+                            <a href="comnile.html">Readmore</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex">
+                        <div class="card card-sec5 flex-fill">
+                           
+                            <h6>PESANILE</h6>
+                            <p>Multifaceted accounting software configurable for diverse financial needs, also serving as a Digital Lending Platform and Payment Gateway Core Platform.</p>
+                            <a href="pesanile.html">Readmore</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex">
+                        <div class="card card-sec5 flex-fill">
+                           
+                            <h6>PROCESSNILE</h6>
+                            <p>Versatile business software platform with robust process automation, catering to various industries with ERP, e-commerce, finance accounting, and reporting capabilities.</p>
+                            <a href="processnile.html">Readmore</a>
+                        </div>
+                    </div>
+             
+            
+                    <div class="col-md-3 d-flex">
+                        <div class="card card-sec5 flex-fill">
+                          
+                            <h6>SERVICENILE</h6>
+                           <p>Advanced service automation platform leveraging microservices architecture for seamless integration and service orchestration.</p>
+                           <a href="servicenile.html">Readmore</a>   
+                        </div>
+                    </div></div></div>
+                    <div class="col-md-12">
+                        <div class="row justify-content-center mt-5">
+                    <div class="col-md-3 d-flex">
+                        <div class="card card-sec5 flex-fill">
+                           
+                            <h6>KABACHIMED</h6>
+                            <p>Comprehensive healthcare solution encompassing HIMS, Health Information Exchange (HIE), Pharmacy and Lab Management Systems, and EMR.</p>
+                            <a href="kabachimed.html">Readmore</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex">
+                        <div class="card card-sec5 flex-fill">
+                           
+                            <h6>VYAS EduERP</h6>
+                            <p>Educational ERP software managing academic administration with modules for Student Information System, Attendance, Gradebook, and more.</p>
+                            <a href="vyas.html">Readmore</a>
+                        </div>
+                    </div>
+                
+           
+               
+                    <div class="col-md-3 d-flex">
+                        <div class="card card-sec5 flex-fill">
+                           
+                            <h6>REVENUENILE</h6>
+                            <p>Advanced Revenue Management System mapping organizational services to charges and fees with comprehensive information and reporting functionalities.</p>
+                            <a href="revenuenile.html">Readmore</a>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+      
+    </div>
+    
+</div></div>
+    </section>
+    <section class="container">
+        <div id="cardCarouselproducts" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4 d-flex">
+                            <div class="card card-sec4 flex-fill">
+                                <img src="images/i-1.png" width="50%" class="img-s" >
+                                <h6 class="text-center">Offline Banking Software</h6>
+                                <p>Software enabling banks to operate independently during network breakdowns, used by major banks in Kenya.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <div class="card card-sec4 flex-fill">
+                                <img src="images/i-2.png"  width="50%" class="img-s">
+                                <h6 class="text-center">Intelligence</h6>
+                                <p>Suite of analytics for banks focusing on risk management, fraud detection, AML, and trend analysis.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <div class="card card-sec4 flex-fill">
+                                <img src="images/i-3.png"  width="50%" class="img-s">
+                                <h6 class="text-center">Collect</h6>
+                                <p>Debt management system offering tools for debt collection and management across various financial activities.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4 d-flex">
+                            <div class="card card-sec4 flex-fill">
+                                <img src="images/i-4.png"  width="50%" class="img-s">
+                                <h6 class="text-center">Financial Transactions Processing Suit</h6>
+                               <p>High-performance financial transactions suite ensuring 24/7 availability to customer channels with service-oriented architecture.</p>
+                                  
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <div class="card card-sec4 flex-fill">
+                                <img src="images/i-5.jpeg" width="60%" class="img-s">
+                                <h6 class="text-center
+                                ">Mobile Banking</h6>
+                                <p>Flexible and secure mobile banking technology accessible via USSD or mobile apps, meeting both technical and business requirements.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <div class="card card-sec4 flex-fill">
+                                <img src="images/i-6.png"  width="50%" class="img-s">
+                                <h6 class="text-center">Credit Management System</h6>
+                                <p>Enterprise solution for credit management in financial institutions, optimizing loan processing with detailed workflow technology.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarouselproducts" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cardCarouselproducts" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+    </section>
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/magnific-popup-options.js"></script>
+<!--  <script src="js/click-scroll.js"></script>-->
+  <script src="js/custom.js"></script>
+
+</body>
+</html>
+    

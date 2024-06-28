@@ -1,0 +1,268 @@
+
+    <!doctype html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <title>Techy</title>
+    
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+            rel="stylesheet">
+    
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+    
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <link href="css/contact.css" rel="stylesheet">
+        <link href="css/tooplate-tween-agency.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+    
+    
+    
+    </head>
+    
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img class="logo" src="images/img3.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <li><a class="dropdown-item nav-link" href="index.html#section_2">Overview</a></li>
+                                            <li><a class="dropdown-item nav-link" href="index.html#section_3">Our Mission & Vision</a></li>
+                                            <li><a class="dropdown-item nav-link" href="index.html#section_4">Key Offerings</a></li>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <li><a class="dropdown-item nav-link" href="index.html#section_4">Strategic Partnerships</a></li>
+                                            <li><a class="dropdown-item nav-link" href="index.html#section_5">Industry Impact</a></li>
+                                            <li><a class="dropdown-item nav-link" href="index.html#section_5">Reputation</a></li>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <li><a class="dropdown-item nav-link" href="index.html#section_6">Future Directions</a></li>
+                                            <li><a class="dropdown-item nav-link" href="index.html#section_6">Strategic Plan</a></li>
+                                            <li><a class="dropdown-item nav-link" href="index.html#section_7">Why Choose Our Team</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_founder.html">About our Founder</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Our Partner's Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Join Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <script>
+    
+    document.getElementById('dropdownMenuButton').addEventListener('click', function(event) {
+                event.preventDefault();
+                window.location.href = 'index.html';
+            });
+            function navigateToSection(event, url) {
+                event.preventDefault();
+                window.location.href = url;
+            }
+        
+            document.querySelectorAll('.dropdown-item').forEach(function(item) {
+                item.addEventListener('click', function(event) {
+                    navigateToSection(event, event.target.getAttribute('href'));
+                });
+            });
+        </script>
+        
+</head>
+<body>
+   
+    
+  
+                <section class=" section-padding">
+                    <div class="container container-box ">
+                            <div class="col-md-12 text-center mt-5 mb-5">
+                                <h2 >Contact us</h2>
+                          
+                        </div>
+                        <div class=" col-md-12">
+                        <div class="row justify-content-center">
+                          
+                              
+                                    <div class=" col-md-7">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-12 d-flex align-items-stretch">
+                                            <div class="contact-wrap w-100 p-md-5 p-4">
+                                                <h3 class="mb-4">Get in touch</h3>
+                                                <form id="businessInquiryForm">
+                                                    <div class="row mb-3">
+                                                        <div class="col-md-6">
+                                                            <label for="name" class="form-label">Name:</label>
+                                                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="company" class="form-label">Business Name:</label>
+                                                            <input type="text" class="form-control" id="company" name="company" placeholder="Enter your company/business name" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-md-6">
+                                                            <label for="country" class="form-label">Country:</label>
+                                                            <select class="form-select" id="country" name="country" required>
+                                                                <option value="">Select your country</option>
+                                                                <option value="USA">United States</option>
+                                                                <option value="Canada">Canada</option>
+                                                                <option value="UK">United Kingdom</option>
+                                                                <option value="Australia">Australia</option>
+                                                                <!-- Add more countries as needed -->
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="state" class="form-label">State:</label>
+                                                            <select class="form-select" id="state" name="state" required>
+                                                                <option value="">Select your state/province</option>
+                                                                <!-- States for USA -->
+                                                                <option value="AL" data-country="USA">Alabama</option>
+                                                                <option value="CA" data-country="USA">California</option>
+                                                                <option value="NY" data-country="USA">New York</option>
+                                                                <!-- Provinces for Canada -->
+                                                                <option value="ON" data-country="Canada">Ontario</option>
+                                                                <option value="QC" data-country="Canada">Quebec</option>
+                                                                <option value="BC" data-country="Canada">British Columbia</option>
+                                                                <!-- Regions for UK -->
+                                                                <option value="ENG" data-country="UK">England</option>
+                                                                <option value="SCT" data-country="UK">Scotland</option>
+                                                                <option value="WLS" data-country="UK">Wales</option>
+                                                                <!-- States for Australia -->
+                                                                <option value="NSW" data-country="Australia">New South Wales</option>
+                                                                <option value="VIC" data-country="Australia">Victoria</option>
+                                                                <option value="QLD" data-country="Australia">Queensland</option>
+                                                                <!-- Add more states/provinces as needed -->
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-md-6">
+                                                            <label for="email" class="form-label">Email:</label>
+                                                            <input type="email" class="form-control" id="email" name="email" placeholder="Your email address" required>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="phone" class="form-label">Phone:</label>
+                                                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone number" pattern="\d{10,}" title="Phone number must be at least 10 digits" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="businessOverview" class="form-label">Business Overview:</label>
+                                                        <textarea class="form-control" id="businessOverview" name="businessOverview" placeholder="Please provide a brief overview of your business or organization" rows="3" required></textarea>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="assistance" class="form-label">How May We Assist You?</label>
+                                                        <textarea class="form-control" id="assistance" name="assistance" placeholder="Please describe how we can assist you or your inquiry" rows="3" required></textarea>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="message" class="form-label">Message:</label>
+                                                        <textarea class="form-control" id="message" name="message" placeholder="Please enter your message or specific inquiry here" rows="3" required></textarea>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                </form>
+                                            </div></div> </div></div>
+                                        
+                                        <div class="col-md-5 align-items-stretch">
+                                            <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+                                                <h3 class="mb-4 mt-md-4 heading-section ">Contact Us</h3>
+                                                <p class="pre">Welcome to TechyKarthik.Com! We are a leading technology hub dedicated to innovation and excellence. Whether you have questions about our services, want to collaborate, or simply want to connect, we're here to help.</p>
+                                        <div class="dbox w-100 d-flex align-items-start">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="fa fa-map-marker" style="color: white;margin-right: 3px;font-size: 20px;"> Location</span>
+
+                                            </div> </div>
+                                            <div class=" dbox w-100 d-flex align-items-start"  >
+                                               <p class="pre1"> Kenya:</p>
+                                               <p class="pre2"> Riara Centre,<br>Riara Road,<br>Kilimani,<br> Nairobi - Kenya,<br>PO Box 21400 00505.</p>
+                                            </div>
+                                            <div class=" dbox w-100 d-flex align-items-start"  >
+                                                <p class="pre1">India:</p>
+                                                <p class="pre2"> Old no.16, <br>New No.1 Thayammal Kudil, <br>Devaraj Pillai Street, <br>Mudichur Road,<br> West Tambaram, <br>Chennai 600045.</p>
+
+                                             </div>
+                                           <div>
+                                            <img src="images/contact.avif" width="100%" >
+                                           </div>
+                                     
+                                  
+                                        </div>
+                                    </div>
+                               
+                                </div> </div>
+                       
+                    </div>
+                </section>
+            
+    <script>
+        document.getElementById('businessInquiryForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const recaptchaResponse = grecaptcha.getResponse();
+            if (recaptchaResponse.length == 0) {
+                alert('Please complete the CAPTCHA');
+                return;
+            }
+            // Proceed with form submission, e.g., via AJAX or form action
+            alert('Form submitted successfully!');
+        });
+
+        document.getElementById('country').addEventListener('change', function() {
+            const country = this.value;
+            const stateSelect = document.getElementById('state');
+            const options = stateSelect.querySelectorAll('option');
+
+            options.forEach(option => {
+                option.style.display = option.getAttribute('data-country') === country ? '' : 'none';
+            });
+
+            stateSelect.value = '';
+        });
+    </script>
+</body>
+</html>

@@ -10,6 +10,12 @@ https://www.tooplate.com/view/2128-tween-agency
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif}
+
 :root {
   --white-color:                  #FFFFFF;
   --primary-color:                #d3c017;
@@ -29,7 +35,7 @@ https://www.tooplate.com/view/2128-tween-agency
   --h4-font-size:                 32px;
   --h5-font-size:                 24px;
   --h6-font-size:                 22px;
-  --p-font-size:                  22px;
+  --p-font-size:                  20px;
   --menu-font-size:               18px;
   --copyright-text-font-size:     16px;
   --custom-link-font-size:        14px;
@@ -389,113 +395,6 @@ strong {
 }
 
 
-/*---------------------------------------
-  CUSTOM FORM               
------------------------------------------*/
-.custom-form .form-control {
-  padding-top: 13px;
-  padding-bottom: 13px;
-}
-
-.custom-form label {
-  color: var(--p-color);
-  font-weight: var(--font-weight-normal);
-}
-
-.custom-form button[type="submit"] {
-  background: var(--primary-color);
-  border: 0;
-  color: var(--white-color);
-  font-weight: var(--font-weight-bold);
-  transition: all 0.3s;
-}
-
-.custom-form button[type="submit"]:hover,
-.custom-form button[type="submit"]:focus {
-  background: var(--dark-color);
-  color: var(--white-color);
-}
-
-.subscribe-form .form-control {
-  background: transparent;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  border-color: var(--white-color);
-  color: var(--white-color);
-}
-
-.subscribe-form input {
-  border-radius: 0;
-}
-
-.subscribe-form button[type="submit"] {
-  background: var(--white-color);
-  color: var(--dark-color);
-}
-
-/*---------------------------------------
-  PRICING PLANS               
------------------------------------------*/
-
-
-.pricing .container {
-  position: relative;
-  z-index: 2;
-}
-
-.pricing-plan {
-  padding: 60px 40px 40px 40px;
-  position: relative;
-}
-
-.pricing-header {
-  border-bottom: 1px solid #dee2e6;
-  padding-bottom: 30px;
-}
-
-.pricing-icon {
-  font-size: 45px;
-}
-
-.pricing-name {
-  margin-left: 50px;
-}
-
-.pricing-price {
-  margin-left: auto;
-}
-
-.pricing-recommend {
-  background: var(--primary-color);
-  color: var(--white-color);
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.pricing-body {
-  margin-top: 60px;
-  margin-right: 50px;
-  margin-left: 95px;
-}
-
-.pricing-list {
-  padding-left: 15px;
-}
-
-.pricing-list-item {
-  color: var(--p-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
-  line-height: normal;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
 
 /*---------------------------------------
   SERVICES               
@@ -850,45 +749,12 @@ border-radius: 20px;
   border-radius: 10px;
 }
 
-/*--Inovations--*/
-.cards-con{
-  
-    background-image: url('../images/back2.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-  }
+
   
 
-.cards{
-  padding: 30px;
- 
 
-    padding: 2.5rem 2rem;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(35px);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
-    padding: 30px 30px 30px 30px;
-    overflow: hidden;
-       margin: 30px;
-       color: white;
- 
 
-}
 
-.card-sec5{
-  margin: 20px;
-  border-radius: 20px !important;
-  background-color: white;
-  border: 1px solid #F2F2F2 !important;
-  box-shadow:  0px 1px 5px 1px  #6e705c !important;
- 
-  padding: 20px;
-
-}
 .card1{
   margin:20px;
   padding: 20px;
@@ -996,23 +862,7 @@ border-radius: 20px;
   
     border-left: 0px solid #d3c017;
    }
-   .cards{
-    padding: 30px;
-   
-      
-      padding: 2.5rem 2rem;
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(35px);
-      border: 2px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
-      padding: 30px 30px 30px 30px;
-      overflow: hidden;
-         margin: 30px;
-         color: white;
-   
   
-  }
   .sum-card{
     padding: 20px;
     margin-top: 20px;

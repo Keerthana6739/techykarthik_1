@@ -38,11 +38,10 @@
 
 <body>
 
-   
     <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
             <a href="index.html" class="navbar-brand">
-                <img class="logo" src="images/img3.png" >
+                <img class="logo" src="images/img3.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,57 +50,70 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-lg-5">
                     <li class="nav-item dropdown">
-                        <a class="nav-link " href="index.html" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown">
                             Home
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <li><a class="dropdown-item nav-link" href="#section_2">Overview</a></li>
-                                        <li><a class="dropdown-item nav-link" href="#section_3">Our Mission & Vision</a>
-                                        </li>
-                                        <li><a class="dropdown-item nav-link" href="#section_4">Key Offerings</a></li>
-
-                                        
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_2">Overview</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_3">Our Mission & Vision</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_4">Key Offerings</a></li>
                                     </div>
                                     <div class="col-md-4">
-                                      
-                                        <li><a class="dropdown-item nav-link" href="#section_4">Strategic
-                                                Partnerships</a></li>
-                                        <li><a class="dropdown-item nav-link" href="#section_5">Industry Impact</a></li>
-                                        <li><a class="dropdown-item nav-link" href="#section_5">Reputation</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_4">Strategic Partnerships</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_5">Industry Impact</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_5">Reputation</a></li>
                                     </div>
                                     <div class="col-md-4">
-                                       
-                                        <li><a class="dropdown-item nav-link" href="#section_6">Future Directions</a></li>
-                                        <li><a class="dropdown-item nav-link" href="#section_6">Strategic Plan</a></li>
-                                        <li><a class="dropdown-item nav-link" href="#section_7">Why Choose Our Team</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_6">Future Directions</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_6">Strategic Plan</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_7">Why Choose Our Team</a></li>
                                     </div>
                                 </div>
-
                             </div>
                         </ul>
                     </li>
-
-
-
                     <li class="nav-item">
-                        <a class="nav-link" href="">Services</a>
+                        <a class="nav-link" href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about_founder.html">About our Founder</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Join Us</a>
+                        <a class="nav-link" href="products.html">Our Partner's Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Contact Us</a>
+                        <a class="nav-link" href="#">Join Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+    <script>
+
+document.getElementById('dropdownMenuButton').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'index.html';
+        });
+        function navigateToSection(event, url) {
+            event.preventDefault();
+            window.location.href = url;
+        }
+    
+        document.querySelectorAll('.dropdown-item').forEach(function(item) {
+            item.addEventListener('click', function(event) {
+                navigateToSection(event, event.target.getAttribute('href'));
+            });
+        });
+    </script>
+    
+ 
     <main>
 
         <section class="hero d-flex justify-content-center align-items-center" id="section_1">
@@ -451,20 +463,26 @@
             <div class="row">
                 <div class="col-md-4 d-flex">
                     <div class="card card-sec5 flex-fill">
+                        <img src="images/Rectangle 223-4.png">
                         <h4>COMNILE</h4>
                         <p>COMNILE is a cutting-edge integration platform designed to streamline and enhance organizational processes through seamless API and Microservices connectivity. This powerful software offers a comprehensive suite of features, including service orchestration, transaction monitoring, machine learning (ML) capabilities, and real-time financial reconciliation.</p>
+                        <a href="">Readmore</a>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex">
                     <div class="card card-sec5 flex-fill">
+                        <img src="images/ok.png">
                         <h4>PESANILE</h4>
                         <p>PESANILE stands out as a multifaceted accounting software, uniquely configurable to serve diverse financial needs. With a robust accounting foundation, flexible API Gateway, and comprehensive Information System reporting, it seamlessly transforms into a Digital Lending Platform, Wallet Banking Platform, Payment Gateway Core Platform, Core Banking Platform, Integrated SACCO System, and Microfinance System.</p>
+                        <a href="">Readmore</a>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex">
                     <div class="card card-sec5 flex-fill">
+                        <img src="images/Rectangle 402.png">
                         <h4>PROCESSNILE</h4>
                         <p>PROCESSNILE is a versatile business software platform equipped with robust process automation tailored for various industries. Serving as a generic ERP, it encompasses a well-structured end-to-end Tier 1 supply chain management, a comprehensive e-commerce system with both mobile and web apps for customer convenience, efficient finance accounting, and insightful reporting across all user levels.</p>
+                        <a href="">Readmore</a>
                     </div>
                 </div>
             </div>
@@ -473,20 +491,26 @@
             <div class="row">
                 <div class="col-md-4 d-flex">
                     <div class="card card-sec5 flex-fill">
+                        <img src="images/Rectangle 223.png">
                         <h4>SERVICENILE</h4>
-                        <p>SERVICENILE is an advanced service automation platform, leveraging a microservices-based architecture to provide unparalleled efficiency. Fueled by a meticulously structured service orchestration and a flexible API layer, the software ensures secure integration between diverse systems and data sources both within and outside the organization. This seamless collaboration culminates in delivering abstract services, providing customers with effortless access to a comprehensive array of offerings.</p>
+                       <p>SERVICENILE is an advanced service automation platform, leveraging a microservices-based architecture to provide unparalleled efficiency. Fueled by a meticulously structured service orchestration and a flexible API layer, the software ensures secure integration between diverse systems and data sources both within and outside the organization. This seamless collaboration culminates in delivering abstract services, providing customers with effortless access to a comprehensive array of offerings.</p>
+                       <a href="">Readmore</a>   
                     </div>
                 </div>
                 <div class="col-md-4 d-flex">
                     <div class="card card-sec5 flex-fill">
+                        <img src="images/Rectangle 223-2.png">
                         <h4>KABACHIMED</h4>
                         <p>KABACHIMED is a revolutionary healthcare solution, encompassing a Hospital Information Management System (HIMS), Health Information Exchange (HIE) platform, Pharmacy Management System, Lab Management System, and a paperless Electronic Medical Record (EMR) for all users. This innovative platform is built on a well-thought-out microservices-based architecture.</p>
+                        <a href="">Readmore</a>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex">
                     <div class="card card-sec5 flex-fill">
+                        <img src="images/Rectangle 223-1.png">
                         <h4>VYAS EduERP</h4>
                         <p>VYAS EduERP is a sophisticated Educational ERP software designed to revolutionize academic administration. This all-in-one solution offers an array of modules to seamlessly manage every aspect of educational institutions. From the foundational Student Information System (SIS) and Admissions and Enrollment to essential modules like Attendance, Academic Planning, Gradebook, and Exam Management, VYAS EduERP ensures a holistic approach to education management.</p>
+                        <a href="">Readmore</a>
                     </div>
                 </div>
             </div>
@@ -495,8 +519,10 @@
             <div class="row">
                 <div class="col-md-4 d-flex">
                     <div class="card card-sec5 flex-fill">
+                        <img src="images/Rectangle 223-3.png">
                         <h4>REVENUENILE</h4>
                         <p>REVENUENILE is an advanced Revenue Management System that seamlessly maps organizational services to charges and fees through a sophisticated transaction coding system. This powerful platform extends beyond revenue collection, offering a complete information system, including Executive Information System (EIS), Management Information System (MIS), and standard reporting functionalities.</p>
+                        <a href="">Readmore</a>
                     </div>
                 </div>
             </div>

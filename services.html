@@ -39,7 +39,6 @@
 </head>
 
 <body>
-
     <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
             <a href="index.html" class="navbar-brand">
@@ -52,47 +51,70 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-lg-5">
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="index.html" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown">
                             Home
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <li><a class="dropdown-item nav-link" href="#section_2">Overview</a></li>
-                                        <li><a class="dropdown-item nav-link" href="#section_3">Our Mission & Vision</a></li>
-                                        <li><a class="dropdown-item nav-link" href="#section_4">Key Offerings</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_2">Overview</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_3">Our Mission & Vision</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_4">Key Offerings</a></li>
                                     </div>
                                     <div class="col-md-4">
-                                        <li><a class="dropdown-item nav-link" href="#section_4">Strategic Partnerships</a></li>
-                                        <li><a class="dropdown-item nav-link" href="#section_5">Industry Impact</a></li>
-                                        <li><a class="dropdown-item nav-link" href="#section_5">Reputation</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_4">Strategic Partnerships</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_5">Industry Impact</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_5">Reputation</a></li>
                                     </div>
                                     <div class="col-md-4">
-                                        <li><a class="dropdown-item nav-link" href="#section_6">Future Directions</a></li>
-                                        <li><a class="dropdown-item nav-link" href="#section_6">Strategic Plan</a></li>
-                                        <li><a class="dropdown-item nav-link" href="#section_7">Why Choose Our Team</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_6">Future Directions</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_6">Strategic Plan</a></li>
+                                        <li><a class="dropdown-item nav-link" href="index.html#section_7">Why Choose Our Team</a></li>
                                     </div>
                                 </div>
                             </div>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Services</a>
+                        <a class="nav-link" href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about_founder.html">About our Founder</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Join Us</a>
+                        <a class="nav-link" href="products.html">Our Partner's Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Contact Us</a>
+                        <a class="nav-link" href="#">Join Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+    <script>
+
+document.getElementById('dropdownMenuButton').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'index.html';
+        });
+        function navigateToSection(event, url) {
+            event.preventDefault();
+            window.location.href = url;
+        }
+    
+        document.querySelectorAll('.dropdown-item').forEach(function(item) {
+            item.addEventListener('click', function(event) {
+                navigateToSection(event, event.target.getAttribute('href'));
+            });
+        });
+    </script>
+    
+ 
    <main>
         <section class=" section-padding mt-3">
             <h3 class="text-center " style="margin-top: 60px;">Our Services</h3>
@@ -107,7 +129,7 @@
                                     <img src="images/ac.jpeg" alt="" class="card-img">
                                 </div>
                             </div>
-                            <div class="card-content" style="height: 210px;">
+                            <div class="card-content" style="height: 180px;">
                                 <h2 class="name">Advisory and Consulting</h2>
                                 <p class="description">Providing strategic insights and advice to help businesses navigate the complex technology landscape and make informed decisions.</p>
                                
@@ -170,7 +192,7 @@
             <div class="row g-4">
                 <!-- Card 1 -->
                 <div class="col-md-4 d-flex">
-                    <div class="card flex-fill">
+                    <div class="card flex-fill b-card">
                         <div class="card-content">
                             <h5 class="card-title">Services Automation and Reconciliation</h5>
                             <p class="card-text">Automating services and developing reconciliation solutions to streamline operations and improve accuracy.
@@ -182,7 +204,7 @@
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-4 d-flex">
-                    <div class="card flex-fill">
+                    <div class="card flex-fill b-card">
                         <div class="card-content">
                             <h5 class="card-title">Integrations Development and Implementation</h5>
                             <p class="card-text">Ensuring seamless integration of various systems and platforms to enhance functionality and performance.</p>
@@ -192,7 +214,7 @@
                 </div>
                 <!-- Card 3 -->
                 <div class="col-md-4 d-flex">
-                    <div class="card flex-fill">
+                    <div class="card flex-fill b-card">
                         <div class="card-content">
                             <h5 class="card-title">System Audit</h5>
                             <p class="card-text">Conducting thorough system audits to evaluate and improve the effectiveness, security, and compliance of your IT infrastructure.</p>
@@ -204,7 +226,7 @@
             <div class="row g-4 mt-4">
                 <!-- Card 4 -->
                 <div class="col-md-4 d-flex">
-                    <div class="card flex-fill">
+                    <div class="card flex-fill b-card">
                         <div class="card-content">
                             <h5 class="card-title">Turnkey Project Implementation</h5>
                             <p class="card-text">Providing end-to-end system implementation services, acting as a one-stop shop for your project needs, and building your intellectual properties with global expertise.
@@ -216,7 +238,7 @@
                 </div>
                 <!-- Card 5 -->
                 <div class="col-md-4 d-flex">
-                    <div class="card flex-fill">
+                    <div class="card flex-fill b-card">
                         <div class="card-content">
                             <h5 class="card-title">Recruitment of Expert Consultants</h5>
                             <p class="card-text">Recruiting top consultants from the global market with extensive experience and knowledge, ensuring the highest quality of service for our clients and partners.</p>
@@ -226,7 +248,7 @@
                 </div>
                 <!-- Card 6 -->
                 <div class="col-md-4 d-flex">
-                    <div class="card flex-fill">
+                    <div class="card flex-fill b-card">
                         <div class="card-content">
                             <h5 class="card-title">Technology and Resources as a Service</h5>
                             <p class="card-text">Offering top-tier technology solutions and highly skilled resources to support your business operations and projects.</p>
@@ -241,13 +263,19 @@
     </section>
     <section>
         <div class="container">
-        <div class="col-md-12">
-            <div class="card l-card ">
+        <div class="col-md-12 l-card">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <img src="images/bpr.jpeg" width="100%">
+                </div>
+                <div class="col-md-8 lcard1" >
                 <h5>Business Process Engineering and Re-engineering
 
                 </h5>
                 <p>Mapping custom business processes to system requirements, identifying the exact systems and vendors that align with client needs. We support vendors and clients with technical, business, and infrastructure resources to build and implement systems that meet all business expectations. We assess the adaptability of business processes and models, and if necessary, we reengineer and repeat the process to ensure optimal alignment.</p>
             </div>
+        </div>
         </div>
     </div>
     </section>

@@ -36,7 +36,6 @@
 </head>
 
 <body>
-
     <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
             <a href="index.html" class="navbar-brand">
@@ -81,15 +80,26 @@
                         <a class="nav-link" href="about_founder.html">About our Founder</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="products.html">Our Partner's Products</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="">Join Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Contact Us</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+    <script>
+        document.getElementById('dropdownMenuButton').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'index.html';
+        });
+    </script>
+    
     
 
     <main>

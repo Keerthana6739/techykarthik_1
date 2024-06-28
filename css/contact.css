@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif}
+nav{
+    background-color: white;
+ }
+ .container-box {
+ background-color: #efefef;
+ padding: 30px;
+ }
+.pre{
+    color: white;
+    font-size:15px ;
+}
+.form-group{
+    margin: 5px;
+}
+
+.heading-section{
+    color: white;
+    font-size:35px;
+}
+.pre1{
+    color: white;
+    font-size:20px ;
+    margin-top: 10px;
+    margin-right: 10px; 
+    margin-left: 16px;
+    font-weight: 700;
+}
+.pre2{
+    color: white;
+    font-size:16px ;
+    margin-top: 15px;
+    margin-right: 10px; 
+    
+    
+}
+.info-wrap{
+    border-radius: 10px;
+}
